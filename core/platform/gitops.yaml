@@ -1,5 +1,5 @@
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta2
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   annotations:
@@ -31,3 +31,8 @@ spec:
         kind: HelmRepository
         name: weave-gitops
   interval: 1h0m0s
+  values:
+    adminUser:
+      create: true
+      passwordHash: $2a$10$fFK5wjzE2avASAGlaaKBe.yrpaZagVpZ9G/KY899ImiLpdPWdkDqO
+      username: admin
