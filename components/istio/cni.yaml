@@ -6,14 +6,18 @@ metadata:
   name: istio-cni
   namespace: flux-system
 spec:
+  releaseName: cni
+  targetNamespace: istio-system
   chart:
     spec:
       chart: cni
       sourceRef:
         kind: HelmRepository
         name: istio
-  releaseName: cni
-  targetNamespace: istio-system
+  values:
+    cni:
+      cniBinDir: /usr/libexec/cni
+      cniConfDir: /var/lib/rancher/k3s/agent/etc/cni/net.d
   interval: 1h0m0s
   dependsOn:
     - name: istio-base

@@ -6,12 +6,12 @@ metadata:
   name: istio-base
   namespace: flux-system
 spec:
+  releaseName: base
+  targetNamespace: istio-system
   chart:
     spec:
       chart: base
       sourceRef:
         kind: HelmRepository
         name: istio
-  releaseName: base
-  targetNamespace: istio-system
   interval: 1h0m0s
