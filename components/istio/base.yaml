@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  annotations:
+    metadata.weave.works/description: This is the istio base components
+  name: istio-base
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: base
+      targetNamespace: istio-system
+      releaseName: base
+      sourceRef:
+        kind: HelmRepository
+        name: istio
+  interval: 1h0m0s
