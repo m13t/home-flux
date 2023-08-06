@@ -1,0 +1,45 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  annotations:
+    metadata.weave.works/description: This is the istio cni components
+  name: istio-controller
+  namespace: flux-system
+spec:
+  releaseName: istiod
+  targetNamespace: istio-system
+  chart:
+    spec:
+      chart: istiod
+      sourceRef:
+        kind: HelmRepository
+        name: istio
+  values:
+    meshConfig:
+      accessLogFile: '/dev/stdout'
+      ingressService: north-south-ingress
+      ingressSelector: north-south-ingress
+      meshMTLS:
+        minProtocolVersion: TLSV1_3
+      outboundTrafficPolicy:
+        mode: REGISTRY_ONLY
+      enableTracing: true
+      defaultConfig:
+        proxyMetadata:
+          ISTIO_META_DNS_CAPTURE: 'true'
+          ISTIO_META_DNS_AUTO_ALLOCATE: 'true'
+    pilot:
+      autoscaleMin: 2
+      resources:
+        requests:
+          cpu: 100m
+          memory: 512Mi
+        limits:
+          cpu: 1000m
+          memory: 1024Mi
+    istio_cni:
+      enabled: true
+  interval: 1h0m0s
+  dependsOn:
+    - name: istio-cni
+      namespace: flux-system
