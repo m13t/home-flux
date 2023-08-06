@@ -6,3 +6,4 @@ resources:
   - base.yaml
   - cni.yaml
   - controller.yaml
+  - gateways.yaml
