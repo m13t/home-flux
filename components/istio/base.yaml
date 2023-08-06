@@ -9,9 +9,9 @@ spec:
   chart:
     spec:
       chart: base
-      targetNamespace: istio-system
-      releaseName: base
       sourceRef:
         kind: HelmRepository
         name: istio
+  releaseName: base
+  targetNamespace: istio-system
   interval: 1h0m0s
