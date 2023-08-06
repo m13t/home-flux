@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
   - source.yaml
   - base.yaml
+  - cni.yaml
   - namespace.yaml
