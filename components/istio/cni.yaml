@@ -14,10 +14,10 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istio
-  values:
-    cni:
-      cniBinDir: /usr/libexec/cni
-      cniConfDir: /var/lib/rancher/k3s/agent/etc/cni/net.d
+  # values:
+  #   cni:
+  #     cniBinDir: /usr/libexec/cni
+  #     cniConfDir: /var/lib/rancher/k3s/agent/etc/cni/net.d
   interval: 1h0m0s
   dependsOn:
     - name: istio-base
