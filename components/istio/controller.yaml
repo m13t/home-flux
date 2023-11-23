@@ -40,6 +40,6 @@ spec:
     istio_cni:
       enabled: true
   interval: 1h0m0s
-  dependsOn:
-    - name: istio-cni
-      namespace: flux-system
+  # dependsOn:
+  #   - name: istio-cni
+  #     namespace: flux-system
