@@ -43,9 +43,7 @@ spec:
         limits:
           cpu: 1000m
           memory: 1024Mi
-    istio_cni:
-      enabled: true
   interval: 1h0m0s
   dependsOn:
-    - name: istio-cni
+    - name: istio-base
       namespace: flux-system

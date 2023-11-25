@@ -4,6 +4,5 @@ resources:
   - namespace.yaml
   - source.yaml
   - base.yaml
-  - cni.yaml
   - controller.yaml
   - gateways.yaml
