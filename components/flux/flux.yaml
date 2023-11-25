@@ -4,7 +4,7 @@ metadata:
   name: flux
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 60m0s
   url: oci://ghcr.io/fluxcd/flux-manifests
   ref:
     tag: latest
