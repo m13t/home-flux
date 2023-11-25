@@ -14,4 +14,10 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istio
+  install:
+    remediation:
+      retires: -1
+  upgrade:
+    remediation:
+      retries: -1
   interval: 1h0m0s

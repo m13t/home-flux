@@ -14,6 +14,12 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istio
+  install:
+    remediation:
+      retires: -1
+  upgrade:
+    remediation:
+      retries: -1
   values:
     service:
       ports:
@@ -55,6 +61,12 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: istio
+  install:
+    remediation:
+      retires: -1
+  upgrade:
+    remediation:
+      retries: -1
   values:
     service:
       ports:
