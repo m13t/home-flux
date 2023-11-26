@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: primary-credentials-metrics
+  namespace: default
+stringData:
+  username: MTMwMzYwMw==
+  password: Z2xjX2V5SnZJam9pT1RrM05qRTBJaXdpYmlJNkluTjBZV05yTFRjNU56ZzBPUzFvYlMxM2NtbDBaUzFoWjJWdWRDSXNJbXNpT2lKaVpHZElPVFF4TXpkM1dUTnFPRTB3VGpGME0wNXlTRWdpTENKdElqcDdJbklpT2lKd2NtOWtMV1YxTFc1dmNuUm9MVEFpZlgwPQ==
+---
+apiVersion: monitoring.grafana.com/v1alpha1
+kind: MetricsInstance
+metadata:
+  name: primary
+  namespace: monitoring
+  labels:
+    agent: grafana-agent-metrics
+spec:
+  remoteWrite:
+  - url: https://prometheus-prod-39-prod-eu-north-0.grafana.net/api/prom/push
+    basicAuth:
+      username:
+        name: primary-credentials-metrics
+        key: username
+      password:
+        name: primary-credentials-metrics
+        key: password
+
+  # Supply an empty namespace selector to look in all namespaces. Remove
+  # this to only look in the same namespace as the MetricsInstance CR
+  serviceMonitorNamespaceSelector: {}
+  serviceMonitorSelector:
+    matchLabels:
+      instance: primary
+
+  # Supply an empty namespace selector to look in all namespaces. Remove
+  # this to only look in the same namespace as the MetricsInstance CR.
+  podMonitorNamespaceSelector: {}
+  podMonitorSelector:
+    matchLabels:
+      instance: primary
+
+  # Supply an empty namespace selector to look in all namespaces. Remove
+  # this to only look in the same namespace as the MetricsInstance CR.
+  probeNamespaceSelector: {}
+  probeSelector:
+    matchLabels:
+      instance: primary

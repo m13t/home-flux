@@ -4,3 +4,4 @@ resources:
   - source.yaml
   - operator.yaml
   - agent.yaml
+  - metrics.yaml
