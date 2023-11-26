@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: primary-credentials-logs
+  namespace: monitoring
+stringData:
+  username: NzUwODQ1
+  password: Z2xjX2V5SnZJam9pT1RrM05qRTBJaXdpYmlJNkluTjBZV05yTFRjNU56ZzBPUzFvYkMxeVpXRmtMV0ZuWlc1MElpd2lheUk2SWpKak9WTTRNR3hMVlU4M2N6VnVSalUzUkd0VU5rMUtPU0lzSW0waU9uc2ljaUk2SW5CeWIyUXRaWFV0Ym05eWRHZ3RNQ0o5ZlE9PQ==
+---
+apiVersion: monitoring.grafana.com/v1alpha1
+kind: LogsInstance
+metadata:
+  name: primary
+  namespace: monitoring
+  labels:
+    agent: grafana-agent-logs
+spec:
+  clients:
+  - url: https://logs-prod-025.grafana.net
+    basicAuth:
+      username:
+        name: primary-credentials-logs
+        key: username
+      password:
+        name: primary-credentials-logs
+        key: password
+
+  # Supply an empty namespace selector to look in all namespaces. Remove
+  # this to only look in the same namespace as the LogsInstance CR
+  podLogsNamespaceSelector: {}
+  podLogsSelector:
+    matchLabels:
+      instance: primary

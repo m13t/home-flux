@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: primary-credentials-metrics
-  namespace: default
+  namespace: monitoring
 stringData:
   username: MTMwMzYwMw==
   password: Z2xjX2V5SnZJam9pT1RrM05qRTBJaXdpYmlJNkluTjBZV05yTFRjNU56ZzBPUzFvYlMxM2NtbDBaUzFoWjJWdWRDSXNJbXNpT2lKaVpHZElPVFF4TXpkM1dUTnFPRTB3VGpGME0wNXlTRWdpTENKdElqcDdJbklpT2lKd2NtOWtMV1YxTFc1dmNuUm9MVEFpZlgwPQ==
