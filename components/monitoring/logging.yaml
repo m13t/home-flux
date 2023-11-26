@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 stringData:
   username: "750845"
-  password: glc_eyJvIjoiOTk3NjE0IiwibiI6InN0YWNrLTc5Nzg0OS1obC1yZWFkLWFnZW50IiwiayI6IjJjOVM4MGxLVU83czVuRjU3RGtUNk1KOSIsIm0iOnsiciI6InByb2QtZXUtbm9ydGgtMCJ9fQ==
+  password: glc_eyJvIjoiOTk3NjE0IiwibiI6InN0YWNrLTc5Nzg0OS1obC13cml0ZS1hZ2VudCIsImsiOiJkOWs5YjU3R3RGNFBCYjloNTRqUjc4c1oiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
 ---
 apiVersion: monitoring.grafana.com/v1alpha1
 kind: LogsInstance
