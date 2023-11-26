@@ -1,0 +1,35 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: cloudflare
+  namespace: flux-system
+spec:
+  interval: 30m
+  url: https://cloudflare.github.io/helm-charts
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  annotations:
+    metadata.weave.works/description: Cloudflare Zero Trust Tunnel
+  name: cloudflared
+  namespace: flux-system
+spec:
+  targetNamespace: cloudflare
+  chart:
+    spec:
+      chart: cloudflare-tunnel-remote
+      sourceRef:
+        kind: HelmRepository
+        name: cloudflare
+  install:
+    createNamespace: true
+    remediation:
+      retries: -1
+  upgrade:
+    remediation:
+      retries: -1
+  values:
+    cloudflare:
+      tunnel_token: "ZXlKaElqb2lZekJoTURNeU0ySmlOV1ptTm1ObE1qaGtZemcwTkRVNU16TTBZelkyTURjaUxDSjBJam9pWkdJeFl6YzJOR010T0daa01TMDBZamxoTFdJME5UUXRPRFEyT0dReU5tTXhaV0kxSWl3aWN5STZJbHB0VlhoTlJHaHFUWHBaZEU0eVRUQk9lVEF3VG5wa2FreFhSbWhOVjFsMFRqSmFiRnB0UlROT1ZGWnFUMFJqTXlKOQ=="
+  interval: 1h0m0s
