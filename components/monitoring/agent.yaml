@@ -48,7 +48,7 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: grafana-agent
-  namespace: default
+  namespace: monitoring
 ---
 apiVersion: monitoring.grafana.com/v1alpha1
 kind: GrafanaAgent
