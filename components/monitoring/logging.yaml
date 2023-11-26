@@ -4,8 +4,8 @@ metadata:
   name: primary-credentials-logs
   namespace: monitoring
 stringData:
-  username: NzUwODQ1
-  password: Z2xjX2V5SnZJam9pT1RrM05qRTBJaXdpYmlJNkluTjBZV05yTFRjNU56ZzBPUzFvYkMxeVpXRmtMV0ZuWlc1MElpd2lheUk2SWpKak9WTTRNR3hMVlU4M2N6VnVSalUzUkd0VU5rMUtPU0lzSW0waU9uc2ljaUk2SW5CeWIyUXRaWFV0Ym05eWRHZ3RNQ0o5ZlE9PQ==
+  username: "750845"
+  password: glc_eyJvIjoiOTk3NjE0IiwibiI6InN0YWNrLTc5Nzg0OS1obC1yZWFkLWFnZW50IiwiayI6IjJjOVM4MGxLVU83czVuRjU3RGtUNk1KOSIsIm0iOnsiciI6InByb2QtZXUtbm9ydGgtMCJ9fQ==
 ---
 apiVersion: monitoring.grafana.com/v1alpha1
 kind: LogsInstance
