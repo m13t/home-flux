@@ -31,5 +31,5 @@ spec:
       retries: -1
   values:
     cloudflare:
-      tunnel_token: "ZXlKaElqb2lZekJoTURNeU0ySmlOV1ptTm1ObE1qaGtZemcwTkRVNU16TTBZelkyTURjaUxDSjBJam9pWkdJeFl6YzJOR010T0daa01TMDBZamxoTFdJME5UUXRPRFEyT0dReU5tTXhaV0kxSWl3aWN5STZJbHB0VlhoTlJHaHFUWHBaZEU0eVRUQk9lVEF3VG5wa2FreFhSbWhOVjFsMFRqSmFiRnB0UlROT1ZGWnFUMFJqTXlKOQ=="
+      tunnel_token: "eyJhIjoiYzBhMDMyM2JiNWZmNmNlMjhkYzg0NDU5MzM0YzY2MDciLCJ0IjoiZGIxYzc2NGMtOGZkMS00YjlhLWI0NTQtODQ2OGQyNmMxZWI1IiwicyI6IlptVXhNRGhqTXpZdE4yTTBOeTAwTnpkakxXRmhNV1l0TjJabFptRTNOVFZqT0RjMyJ9"
   interval: 1h0m0s
