@@ -4,3 +4,4 @@ resources:
   - ../../components/flux
   - self.yaml
   - core.yaml
+  - gateway.yaml
