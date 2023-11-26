@@ -16,7 +16,7 @@ metadata:
     agent: grafana-agent-logs
 spec:
   clients:
-  - url: https://logs-prod-025.grafana.net
+  - url: https://logs-prod-025.grafana.net/loki/api/v1/push
     basicAuth:
       username:
         name: primary-credentials-logs
