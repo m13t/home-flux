@@ -15,6 +15,7 @@ spec:
         kind: HelmRepository
         name: grafana
   install:
+    createNamespace: true
     remediation:
       retries: -1
   upgrade:
