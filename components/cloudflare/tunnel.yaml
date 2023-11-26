@@ -15,6 +15,7 @@ metadata:
   name: cloudflared
   namespace: flux-system
 spec:
+  releaseName: cloudflare-tunnel-remote
   targetNamespace: cloudflare
   chart:
     spec:
