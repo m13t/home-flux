@@ -31,13 +31,19 @@ spec:
         mode: REGISTRY_ONLY
       enableTracing: true
       defaultConfig:
-        tracing:
-          zipkin:
-            address: grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local:9411
-            sampling: 100
         proxyMetadata:
           ISTIO_META_DNS_CAPTURE: 'true'
           ISTIO_META_DNS_AUTO_ALLOCATE: 'true'
+      extensionProviders:
+        - name: zipkin
+          zipkin:
+            service: grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local
+            port: 9411
+      defaultProviders:
+        tracing:
+          - zipkin
+        metrics:
+          - prometheus
     pilot:
       autoscaleMin: 1
       resources:
