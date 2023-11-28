@@ -22,15 +22,7 @@ spec:
       retries: -1
   values:
     service:
-      ports:
-        - name: http2
-          port: 8080
-          protocol: TCP
-          targetPort: 80
-        - name: https
-          port: 8443
-          protocol: TCP
-          targetPort: 443
+      type: ClusterIP
     autoscaling:
       minReplicas: 1
     resources:
@@ -69,19 +61,7 @@ spec:
       retries: -1
   values:
     service:
-      ports:
-        - name: http2
-          port: 80
-          protocol: TCP
-          targetPort: 80
-        - name: https
-          port: 443
-          protocol: TCP
-          targetPort: 443
-        - name: nats
-          port: 4222
-          protocol: TCP
-          targetPort: 4222
+      type: ClusterIP
     autoscaling:
       minReplicas: 1
     resources:
