@@ -34,12 +34,7 @@ spec:
           username: "749949"
           password: glc_eyJvIjoiOTk3NjE0IiwibiI6ImxhYiIsImsiOiIzZGwxdFkxeTBEMzFWOWhVUjZBQ1lsNzYiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
     opencost:
-      opencost:
-        exporter:
-          defaultClusterId: lab
-        prometheus:
-          external:
-            url: https://prometheus-prod-39-prod-eu-north-0.grafana.net/api/prom
+      enabled: false
     traces:
       enabled: true
     grafana-agent:
