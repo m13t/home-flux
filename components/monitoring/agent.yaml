@@ -10,7 +10,7 @@ spec:
   targetNamespace: monitoring
   chart:
     spec:
-      chart: grafana-k8s-monitoring
+      chart: k8s-monitoring
       sourceRef:
         kind: HelmRepository
         name: grafana
