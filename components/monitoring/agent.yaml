@@ -1,77 +1,63 @@
-apiVersion: v1
-kind: ServiceAccount
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
 metadata:
-  name: grafana-agent
-  namespace: monitoring
----
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole
-metadata:
-  name: grafana-agent
-rules:
-- apiGroups:
-  - ""
-  resources:
-  - nodes
-  - nodes/proxy
-  - nodes/metrics
-  - services
-  - endpoints
-  - pods
-  - events
-  verbs:
-  - get
-  - list
-  - watch
-- apiGroups:
-  - networking.k8s.io
-  resources:
-  - ingresses
-  verbs:
-  - get
-  - list
-  - watch
-- nonResourceURLs:
-  - /metrics
-  - /metrics/cadvisor
-  verbs:
-  - get
----
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
-metadata:
-  name: grafana-agent
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: grafana-agent
-subjects:
-- kind: ServiceAccount
-  name: grafana-agent
-  namespace: monitoring
----
-apiVersion: monitoring.grafana.com/v1alpha1
-kind: GrafanaAgent
-metadata:
-  name: grafana-agent
-  namespace: monitoring
-  labels:
-    app: grafana-agent
+  annotations:
+    metadata.weave.works/description: Grafana Cloud
+  name: grafana-k8s-monitoring
+  namespace: flux-system
 spec:
-  image: grafana/agent:v0.38.0
-  integrations:
-    selector:
-      matchLabels:
-          agent: grafana-agent-integrations
-  logLevel: info
-  serviceAccountName: grafana-agent
-  metrics:
-    instanceSelector:
-      matchLabels:
-        agent: grafana-agent-metrics
-    externalLabels:
-      cluster: cloud
-  logs:
-    instanceSelector:
-      matchLabels:
-        agent: grafana-agent-logs
+  releaseName: grafana-k8s-monitoring
+  targetNamespace: monitoring
+  chart:
+    spec:
+      chart: grafana-k8s-monitoring
+      sourceRef:
+        kind: HelmRepository
+        name: grafana
+  values:
+    cluster:
+      name: lab
+    externalServices:
+      prometheus:
+        host: https://prometheus-prod-39-prod-eu-north-0.grafana.net
+        basicAuth:
+          username: "1303603"
+          password: glc_eyJvIjoiOTk3NjE0IiwibiI6ImxhYiIsImsiOiIzZGwxdFkxeTBEMzFWOWhVUjZBQ1lsNzYiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
+      loki:
+        host: https://logs-prod-025.grafana.net
+        basicAuth:
+          username: "750845"
+          password: glc_eyJvIjoiOTk3NjE0IiwibiI6ImxhYiIsImsiOiIzZGwxdFkxeTBEMzFWOWhVUjZBQ1lsNzYiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
+      tempo:
+        host: https://tempo-prod-18-prod-eu-north-0.grafana.net:443
+        basicAuth:
+          username: "749949"
+          password: glc_eyJvIjoiOTk3NjE0IiwibiI6ImxhYiIsImsiOiIzZGwxdFkxeTBEMzFWOWhVUjZBQ1lsNzYiLCJtIjp7InIiOiJwcm9kLWV1LW5vcnRoLTAifX0=
+    opencost:
+      opencost:
+        exporter:
+          defaultClusterId: lab
+        prometheus:
+          external:
+            url: https://prometheus-prod-39-prod-eu-north-0.grafana.net/api/prom
+    traces:
+      enabled: true
+    grafana-agent:
+      agent:
+        extraPorts:
+          - name: otlp-grpc
+            port: 4317
+            targetPort: 4317
+            protocol: TCP
+          - name: otlp-http
+            port: 4318
+            targetPort: 4318
+            protocol: TCP
+  install:
+    createNamespace: true
+    remediation:
+      retries: -1
+  upgrade:
+    remediation:
+      retries: -1
+  interval: 1h0m0s
