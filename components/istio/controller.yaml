@@ -34,6 +34,9 @@ spec:
         proxyMetadata:
           ISTIO_META_DNS_CAPTURE: 'true'
           ISTIO_META_DNS_AUTO_ALLOCATE: 'true'
+        tracing:
+          zipkin:
+            grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local:9411
       extensionProviders:
         - name: zipkin
           zipkin:
