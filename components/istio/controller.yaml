@@ -39,6 +39,10 @@ spec:
           zipkin:
             service: grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local
             port: 9411
+        - name: otel
+          envoyOtelAls:
+            service: grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local
+            port: 4317
       defaultProviders:
         tracing:
           - zipkin
