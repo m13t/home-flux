@@ -52,6 +52,10 @@ spec:
             port: 9411
             targetPort: 9411
             protocol: "TCP"
+    grafana-agent-logs:
+      agent:
+        mounts:
+          dockercontainers: true
   install:
     createNamespace: true
     remediation:
