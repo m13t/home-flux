@@ -31,6 +31,9 @@ spec:
         mode: REGISTRY_ONLY
       enableTracing: true
       defaultConfig:
+        tracing:
+          zipkin:
+            address: grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local:9411
         proxyMetadata:
           ISTIO_META_DNS_CAPTURE: 'true'
           ISTIO_META_DNS_AUTO_ALLOCATE: 'true'
