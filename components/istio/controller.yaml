@@ -30,6 +30,10 @@ spec:
       outboundTrafficPolicy:
         mode: REGISTRY_ONLY
       enableTracing: true
+      defaultConfig:
+        tracing:
+          zipkin:
+            address: grafana-k8s-monitoring-grafana-agent.monitoring.svc.cluster.local:9411
       extensionProviders:
         - name: zipkin
           zipkin:
