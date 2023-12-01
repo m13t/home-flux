@@ -1,3 +1,3 @@
 # FluxCD Based Home Lab
 
-Kubernetes GitOps central repository
+Kubernetes GitOps central repository.
