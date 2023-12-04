@@ -1,0 +1,8 @@
+creation_rules:
+  - path_regex: .*
+    encrypted_regex: ^(data|stringData)$
+    age: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
+
+stores:
+  yaml:
+    indent: 2
