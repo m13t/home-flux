@@ -6827,7 +6827,7 @@ sops:
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: bootstrap
+  name: cluster
   namespace: flux-system
 spec:
   interval: 1m0s
@@ -6855,7 +6855,7 @@ sops:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: bootstrap
+  name: cluster
   namespace: flux-system
 spec:
   interval: 10m0s
@@ -6863,7 +6863,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: bootstrap
+    name: cluster
   decryption:
     provider: sops
     secretRef:
