@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - source.yaml
   - secrets.yaml
-  - exportter.yaml
+  - exporter.yaml
