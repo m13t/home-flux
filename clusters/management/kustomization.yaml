@@ -4,6 +4,7 @@ resources:
   - ../../components/cloudflare
   - ../../components/tekton
   - ../../components/vcluster
+  - ../../components/port
   - sync.yaml
   - gateway.yaml
   - clusters.yaml
