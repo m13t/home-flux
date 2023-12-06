@@ -14,3 +14,39 @@ spec:
       hosts:
         - "m13t.dev"
         - "*.m13t.dev"
+---
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: east-west-wildcard
+  namespace: istio-system
+spec:
+  selector:
+    app: east-west-ingress
+  servers:
+    - port:
+        number: 80
+        name: http
+        protocol: HTTP
+      hosts:
+        - "internal.m13t.dev"
+        - "*.internal.m13t.dev"
+---
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: vcluster
+  namespace: istio-system
+spec:
+  selector:
+    app: east-west-ingress
+  servers:
+    - port:
+        number: 443
+        name: https
+        protocol: HTTPS
+      hosts:
+        - "staging.internal.m13t.dev"
+        - "production.internal.m13t.dev"
+      tls:
+        mode: PASSTHROUGH

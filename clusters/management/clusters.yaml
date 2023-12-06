@@ -15,6 +15,9 @@ spec:
   values:
     vcluster:
       image: rancher/k3s:v1.28.4-k3s1
+    syncer:
+  extraArgs:
+    - --tls-san=staging.internal.m13t.dev
   install:
     createNamespace: true
     remediation:
@@ -23,6 +26,27 @@ spec:
     remediation:
       retries: -1
   interval: 1h0m0s
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: vcluster
+  namespace: staging
+spec:
+  hosts:
+    - staging.internal.m13t.dev
+  gateways:
+    - istio-system/vcluster
+  tls:
+    - match:
+        - port: 443
+          sniHosts:
+            - staging.internal.m13t.dev
+      route:
+        - destination:
+            host: staging
+            port:
+              number: 443
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
@@ -41,6 +65,8 @@ spec:
   values:
     vcluster:
       image: rancher/k3s:v1.28.4-k3s1
+    extraArgs:
+      - --tls-san=production.internal.m13t.dev
   install:
     createNamespace: true
     remediation:
@@ -49,3 +75,24 @@ spec:
     remediation:
       retries: -1
   interval: 1h0m0s
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: vcluster
+  namespace: production
+spec:
+  hosts:
+    - production.internal.m13t.dev
+  gateways:
+    - istio-system/vcluster
+  tls:
+    - match:
+        - port: 443
+          sniHosts:
+            - production.internal.m13t.dev
+      route:
+        - destination:
+            host: production
+            port:
+              number: 443
