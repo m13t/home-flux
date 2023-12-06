@@ -3,3 +3,4 @@ resources:
   - ../../components/istio
   - ../../components/cloudflare
   - sync.yaml
+  - gateway.yaml
