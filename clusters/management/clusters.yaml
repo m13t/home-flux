@@ -1,0 +1,51 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: staging-cluster
+  namespace: flux-system
+spec:
+  releaseName: staging
+  targetNamespace: staging
+  chart:
+    spec:
+      chart: vcluster
+      sourceRef:
+        kind: HelmRepository
+        name: vcluster
+  values:
+    vcluster:
+      image: rancher/k3s:v1.28.4-k3s1
+  install:
+    createNamespace: true
+    remediation:
+      retries: -1
+  upgrade:
+    remediation:
+      retries: -1
+  interval: 1h0m0s
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: prod-cluster
+  namespace: flux-system
+spec:
+  releaseName: production
+  targetNamespace: production
+  chart:
+    spec:
+      chart: vcluster
+      sourceRef:
+        kind: HelmRepository
+        name: vcluster
+  values:
+    vcluster:
+      image: rancher/k3s:v1.28.4-k3s1
+  install:
+    createNamespace: true
+    remediation:
+      retries: -1
+  upgrade:
+    remediation:
+      retries: -1
+  interval: 1h0m0s
