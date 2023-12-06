@@ -16,8 +16,8 @@ spec:
     vcluster:
       image: rancher/k3s:v1.28.4-k3s1
     syncer:
-  extraArgs:
-    - --tls-san=staging.internal.m13t.dev
+      extraArgs:
+        - --tls-san=staging.internal.m13t.dev
   install:
     createNamespace: true
     remediation:
@@ -65,8 +65,9 @@ spec:
   values:
     vcluster:
       image: rancher/k3s:v1.28.4-k3s1
-    extraArgs:
-      - --tls-san=production.internal.m13t.dev
+    syncer:
+      extraArgs:
+        - --tls-san=production.internal.m13t.dev
   install:
     createNamespace: true
     remediation:
