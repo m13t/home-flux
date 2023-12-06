@@ -32,7 +32,7 @@ spec:
       retries: -1
   interval: 1h0m0s
 ---
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
   name: vcluster
@@ -87,7 +87,7 @@ spec:
       retries: -1
   interval: 1h0m0s
 ---
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
   name: vcluster
