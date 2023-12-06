@@ -61,7 +61,7 @@ spec:
       retries: -1
   values:
     service:
-      type: ClusterIP
+      type: LoadBalancer
     autoscaling:
       minReplicas: 1
     resources:
