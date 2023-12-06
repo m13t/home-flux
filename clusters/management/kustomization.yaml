@@ -1,1 +1,3 @@
-resources: []
+resources:
+  - ../../components/flux
+  - sync.yaml
