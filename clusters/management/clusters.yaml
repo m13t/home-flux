@@ -18,6 +18,7 @@ spec:
     syncer:
       extraArgs:
         - --tls-san=staging.internal.m13t.dev
+        - --out-kube-config-server=https://staging.internal.m13t.dev
   install:
     createNamespace: true
     remediation:
@@ -68,6 +69,7 @@ spec:
     syncer:
       extraArgs:
         - --tls-san=production.internal.m13t.dev
+        - --out-kube-config-server=https://production.internal.m13t.dev
   install:
     createNamespace: true
     remediation:
