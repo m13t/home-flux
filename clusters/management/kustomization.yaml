@@ -1,3 +1,5 @@
 resources:
   - ../../components/flux
+  - ../../components/istio
+  - ../../components/cloudflare
   - sync.yaml
