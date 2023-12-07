@@ -9,10 +9,6 @@ metadata:
     pod-security.kubernetes.io/warn-version: latest
   name: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -25,7 +21,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -49,10 +44,6 @@ spec:
           - system-node-critical
           - system-cluster-critical
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -65,7 +56,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -418,10 +408,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -434,7 +420,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -841,10 +826,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -857,7 +838,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -1781,10 +1761,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -1797,7 +1773,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -2258,10 +2233,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -2274,7 +2245,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -2932,10 +2902,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -2948,7 +2914,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -3341,10 +3306,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -3357,7 +3318,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -4605,10 +4565,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -4621,7 +4577,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -4899,10 +4854,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -4915,7 +4866,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -5257,10 +5207,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -5273,7 +5219,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -5817,10 +5762,6 @@ spec:
       subresources:
         status: {}
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -5833,7 +5774,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -5848,10 +5788,6 @@ metadata:
   name: helm-controller
   namespace: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -5864,7 +5800,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -5879,10 +5814,6 @@ metadata:
   name: kustomize-controller
   namespace: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -5895,7 +5826,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -5910,10 +5840,6 @@ metadata:
   name: notification-controller
   namespace: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -5926,7 +5852,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -5941,10 +5866,6 @@ metadata:
   name: source-controller
   namespace: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -5957,7 +5878,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6051,10 +5971,6 @@ rules:
       - patch
       - delete
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6067,7 +5983,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6097,10 +6012,6 @@ rules:
       - patch
       - update
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6113,7 +6024,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6142,10 +6052,6 @@ rules:
       - list
       - watch
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6158,7 +6064,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6182,10 +6087,6 @@ subjects:
     name: helm-controller
     namespace: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6198,7 +6099,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6234,10 +6134,6 @@ subjects:
     name: image-automation-controller
     namespace: flux-system
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6250,7 +6146,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6265,10 +6160,6 @@ metadata:
   namespace: flux-system
 type: Opaque
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6281,7 +6172,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6294,10 +6184,6 @@ metadata:
   namespace: flux-system
 type: Opaque
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6310,7 +6196,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6335,10 +6220,6 @@ spec:
     app: notification-controller
   type: ClusterIP
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6351,7 +6232,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6376,10 +6256,6 @@ spec:
     app: source-controller
   type: ClusterIP
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6392,7 +6268,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6417,10 +6292,6 @@ spec:
     app: notification-controller
   type: ClusterIP
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6433,7 +6304,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6521,10 +6391,6 @@ spec:
         - emptyDir: {}
           name: temp
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6537,7 +6403,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6625,10 +6490,6 @@ spec:
         - emptyDir: {}
           name: temp
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6641,7 +6502,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6733,10 +6593,6 @@ spec:
         - emptyDir: {}
           name: temp
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6749,7 +6605,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6850,10 +6705,6 @@ spec:
         - emptyDir: {}
           name: tmp
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6866,7 +6717,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6890,10 +6740,6 @@ spec:
     - Ingress
     - Egress
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6906,7 +6752,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6930,10 +6775,6 @@ spec:
   policyTypes:
     - Ingress
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6946,7 +6787,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -6969,10 +6809,6 @@ spec:
   policyTypes:
     - Ingress
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -6985,7 +6821,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -7002,10 +6837,6 @@ spec:
     name: flux-system
   url: ssh://git@github.com/m13t/home-flux
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -7018,7 +6849,6 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
 ---
@@ -7039,10 +6869,6 @@ spec:
     secretRef:
       name: sops-age
 sops:
-  kms: []
-  gcp_kms: []
-  azure_kv: []
-  hc_vault: []
   age:
     - recipient: age1s08k5flasstpdy7xqphr970l85qwu08ypr4g3swcny8vt3q8vc8ssjam4j
       enc: |
@@ -7055,6 +6881,5 @@ sops:
         -----END AGE ENCRYPTED FILE-----
   lastmodified: "2023-12-05T20:04:16Z"
   mac: ENC[AES256_GCM,data:fvTPns1zjqo0Ve1soNmD0oUSw9hhhSGc9PXZibhuk/Q7p+o3KQOpPLDJVHTs3faYxCpsK0ePBfdEkxa64GrJ/+s6AQEvYv5VzWj81Np8Iya9UMNGJQlK95XAEI8+2MROdHF7qwYowkwX5wM2FGXWjsq1WinifJnSvc7Do0pRM9I=,iv:GBFXM3uhaysie7bAkt3NkdYovqWDOR0NmkuPm72Uaxg=,tag:M4q6jC6KEZCar6eBz9A+xA==,type:str]
-  pgp: []
   encrypted_regex: ^(data|stringData)$
   version: 3.8.1
