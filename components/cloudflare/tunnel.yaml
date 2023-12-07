@@ -30,7 +30,7 @@ spec:
   upgrade:
     remediation:
       retries: -1
-  values:
-    cloudflare:
-      tunnel_token: "eyJhIjoiYzBhMDMyM2JiNWZmNmNlMjhkYzg0NDU5MzM0YzY2MDciLCJ0IjoiZGIxYzc2NGMtOGZkMS00YjlhLWI0NTQtODQ2OGQyNmMxZWI1IiwicyI6IlptVXhNRGhqTXpZdE4yTTBOeTAwTnpkakxXRmhNV1l0TjJabFptRTNOVFZqT0RjMyJ9"
+  valuesFrom:
+    - kind: Secret
+      name: cloudflare-helm-values
   interval: 1h0m0s
