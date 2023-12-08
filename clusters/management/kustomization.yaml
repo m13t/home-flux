@@ -7,3 +7,4 @@ resources:
   - ../../components/port
   - sync.yaml
   - gateway.yaml
+  - clusters.yaml
