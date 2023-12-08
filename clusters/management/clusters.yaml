@@ -39,3 +39,45 @@ spec:
         - op: replace
           path: /spec/tls/0/route/0/destination/host
           value: staging
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: prod-cluster
+  namespace: flux-system
+spec:
+  targetNamespace: prod
+  interval: 10m0s
+  path: ./clusters/virtual
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: core
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-age
+  patches:
+    - target:
+        kind: HelmRelease
+        name: vcluster
+      patch: |
+        - op: replace
+          path: /spec/releaseName
+          value: prod
+        - op: replace
+          path: /spec/targetNamespace
+          value: prod
+    - target:
+        kind: VirtualService
+        name: vcluster
+      patch: |
+        - op: replace
+          path: /spec/hosts/0
+          value: prod.internal.m13t.dev
+        - op: replace
+          path: /spec/tls/0/match/0/sniHosts/0
+          value: prod.internal.m13t.dev
+        - op: replace
+          path: /spec/tls/0/route/0/destination/host
+          value: prod
