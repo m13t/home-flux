@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: cloudflare
-  namespace: flux-system
+  namespace: cloudflare
 spec:
   interval: 30m
   url: https://cloudflare.github.io/helm-charts
@@ -13,7 +13,7 @@ metadata:
   annotations:
     metadata.weave.works/description: Cloudflare Zero Trust Tunnel
   name: cloudflared
-  namespace: flux-system
+  namespace: cloudflare
 spec:
   releaseName: cloudflare-tunnel-remote
   targetNamespace: cloudflare
