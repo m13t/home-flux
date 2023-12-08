@@ -1,0 +1,26 @@
+init:
+  manifests: |
+    apiVersion: v1
+    kind: Namespace
+    metadata:
+      name: flux-system
+    ---
+    apiVersion: v1
+    kind: Secret
+    metadata:
+      name: sops-age
+      namespace: flux-system
+    type: Opaque
+    data:
+      age.agekey: IyBHbG9iYWwKIyBjcmVhdGVkOiAyMDIzLTEyLTA0VDE2OjAyOjQxWgojIHB1YmxpYyBrZXk6IGFnZTFzMDhrNWZsYXNzdHBkeTd4cXBocjk3MGw4NXF3dTA4eXByNGczc3djbnk4dnQzcTh2Yzhzc2phbTRqCkFHRS1TRUNSRVQtS0VZLTFENkpMU1M3SFlITTBRWUtUU1MyTFVRSDM0UU1XOFRYTFk1QVVSMEQ4MjMwUDJWUkxRWjZRWFlUSkpFCg==
+    ---
+    apiVersion: v1
+    kind: Secret
+    type: Opaque
+    metadata:
+      name: flux-system
+      namespace: flux-system
+    data:
+      identity: LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JRzJBZ0VBTUJBR0J5cUdTTTQ5QWdFR0JTdUJCQUFpQklHZU1JR2JBZ0VCQkRCWWg5b0grS0FDb1RIMk9sNUEKam1mYnRrbzRNZmNuajBPcnRVRVlacWV0WDBMYXprbFNKWVlwaWlNTDBmK2lRSlNoWkFOaUFBUi9RdVV3dHQyLwpYUHJENjZRWDJxeDZkY1BiWml3RXRQT1lEUXpPSDloczVkZnQxZVpFckJFVnQzVjBaNFI5cC9wK01Zd0dJUktCCjhUTk1ZcUhtMTBuN3p0R1FlU3VPaXFnemF0bGRyeEozbEo3UkZvcmRUUkVReElHNDFvQ2ZpOEk9Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K
+      identity.pub: ZWNkc2Etc2hhMi1uaXN0cDM4NCBBQUFBRTJWalpITmhMWE5vWVRJdGJtbHpkSEF6T0RRQUFBQUlibWx6ZEhBek9EUUFBQUJoQkg5QzVUQzIzYjljK3NQcnBCZmFySHAxdzl0bUxBUzA4NWdORE00ZjJHemwxKzNWNWtTc0VSVzNkWFJuaEgybituNHhqQVloRW9IeE0weGlvZWJYU2Z2TzBaQjVLNDZLcUROcTJWMnZFbmVVbnRFV2l0MU5FUkRFZ2JqV2dKK0x3Zz09Cg==
+      known_hosts: Z2l0aHViLmNvbSBlY2RzYS1zaGEyLW5pc3RwMjU2IEFBQUFFMlZqWkhOaExYTm9ZVEl0Ym1semRIQXlOVFlBQUFBSWJtbHpkSEF5TlRZQUFBQkJCRW1LU0VOalFFZXpPbXhrWk15N29wS2d3RkI5bmt0NVlScllNak51RzVOODd1UmdnNkNMcmJvNXdBZFQveTZ2MG1LVjBVMncwV1oyWUIvKytUcG9ja2c9

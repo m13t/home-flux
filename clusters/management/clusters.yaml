@@ -26,6 +26,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: vcluster
+        namespace: flux-system
   values:
     vcluster:
       image: rancher/k3s:v1.28.4-k3s1
