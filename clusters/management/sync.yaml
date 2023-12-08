@@ -9,7 +9,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/m13t/home-flux
+  url: ssh://git@github.com/m13t-labs/k8s-flux-core
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
