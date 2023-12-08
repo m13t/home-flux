@@ -1,0 +1,36 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: vcluster
+  namespace: vcluster
+spec:
+  releaseName: vcluster
+  targetNamespace: vcluster
+  chart:
+    spec:
+      chart: vcluster
+      sourceRef:
+        kind: HelmRepository
+        name: vcluster
+        namespace: flux-system
+  values:
+    vcluster:
+      image: rancher/k3s:v1.28.4-k3s1
+    # syncer:
+    #   extraArgs:
+    #     - --tls-san=staging.internal.m13t.dev
+    #     - --out-kube-config-server=https://staging.internal.m13t.dev
+    sync:
+      nodes:
+        enabled: true
+        syncAllNodes: true
+  valuesFrom:
+    - kind: Secret
+      name: flux-bootstrap
+  install:
+    remediation:
+      retries: -1
+  upgrade:
+    remediation:
+      retries: -1
+  interval: 1h0m0s

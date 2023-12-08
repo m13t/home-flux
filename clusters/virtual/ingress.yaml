@@ -1,0 +1,20 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: vcluster
+  namespace: vcluster
+spec:
+  hosts:
+    - vcluster.internal.m13t.dev
+  gateways:
+    - istio-system/vcluster
+  tls:
+    - match:
+        - port: 443
+          sniHosts:
+            - vcluster.internal.m13t.dev
+      route:
+        - destination:
+            host: vcluster
+            port:
+              number: 443
